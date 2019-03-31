@@ -8,18 +8,15 @@ Finally I decided to write it to remeber it.
 https://wiki.mate-desktop.org/docs:devel:mate-panel
 
 
-Required files:
+Applet requires three files:
 
 ```
-your-folder/TestApplet.py
-/usr/share/mate-panel/applets/TestApplet.mate-panel-applet
-/usr/share/dbus-1/services/TestAppletFactory.service
+your-folder/TestApplet.py  
+/usr/share/mate-panel/applets/TestApplet.mate-panel-applet  
+/usr/share/dbus-1/services/TestAppletFactory.service  
 ```
 
-You can install `.mate-panel-applet` and `.service` once 
-but inside those file you have to change path to `.py`
-
-Some examples use names with prefix `org.mate.panel.` and `org.mate.panel.applet.` but it works without those prefixes.
+Some examples on internet use names with prefix `org.mate.panel.` and `org.mate.panel.applet.` but it works without those prefixes.
 They are rather for uniq names - so you can install two applets with name `TestApplet`.
 
 ```
@@ -27,9 +24,10 @@ They are rather for uniq names - so you can install two applets with name `TestA
 /usr/share/dbus-1/services/org.mate.panel.applet.TestAppletFactory.service
 ```
 
+You can install `.mate-panel-applet` and `.service` once. Inside these files you have to change path to your `.py`. 
 
-https://github.com/ubuntu-mate/mate-optimus/blob/master/usr/lib/mate-optimus/mate-optimus-applet
-https://github.com/benpicco/mate-panel-python-applet-example/blob/master/mateAppletExample.py
+I created `install.sh` to (re)install these files. You may have to edit it if you don't use name `TestApplet.py`.
+
 
 ## Debugging
 
@@ -46,7 +44,9 @@ To see any debug messages you can use module `logging` and save messages in file
 I took this part from [mate-i3-applet](https://github.com/city41/mate-i3-applet/blob/master/matei3applet.py)
 
 
---- some applets which I previewed to learn it ---
+--- 
+
+### some applets which I previewed to learn it
 
 https://github.com/search?l=Python&q=mate+applet&type=Repositories
 
@@ -55,32 +55,44 @@ logging: https://github.com/city41/mate-i3-applet/blob/master/matei3applet.py
 https://github.com/linuxmint/mintmenu-vala/blob/master/mintmenu.vala
 
 https://github.com/ubuntu-mate/mate-optimus/blob/master/usr/lib/mate-optimus/mate-optimus-applet
+
 https://github.com/benpicco/mate-panel-python-applet-example/blob/master/mateAppletExample.py
+
 https://github.com/robint99/mate-dock-applet/blob/master/src/dock_applet.in
+
 https://github.com/projecthamster/hamster/blob/gnome_2x/src/hamster-applet
 
-example how to extends right menu with ActionGroup
+---
+
+### example how to extends right menu with ActionGroup
+
 https://github.com/mate-desktop/mate-applets/blob/master/mateweather/mateweather-applet.c
 
 https://github.com/mate-desktop/mate-applets
 
---- other links ---
+--- 
+
+### other links
 
 https://stackoverflow.com/questions/49498316/auto-refreshing-mate-panel-applet?rq=1
+
 https://ubuntu-mate.community/t/python-menu-panel-applet/9376/2
 
 https://askubuntu.com/questions/751608/how-can-i-write-a-dynamically-updated-panel-app-indicator
 
+--- 
 
---- all started all with this ---
+### all started all with this
 
 https://wiki.mate-desktop.org/docs:devel:mate-panel
+
 http://candidtim.github.io/appindicator/2014/09/13/ubuntu-appindicator-step-by-step.html
 
 https://askubuntu.com/questions/750815/fuzzy-clock-for-ubuntu/752675#752675
 
+--- 
 
---- tool(s) for run applet without installing manually (again and again) ---
+### tool(s) to run applet without installing it manually (again and again)
 
 https://askubuntu.com/questions/229511/how-can-i-add-an-applet-to-mate-from-the-terminal
 
