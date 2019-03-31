@@ -1,0 +1,14 @@
+[Applet Factory]
+Id=TestAppletFactory
+InProcess=false
+Location=/home/furas/projekty/python/__MATE__/panel-applet/testapplet.py
+Name=Test Applet Factory
+Description=A MATE Python Applet example factory
+ 
+[TestApplet]
+Name=Test Applet
+Description=A MATE Python Applet example
+Icon=mate
+MateComponentId=OAFIID:MATE_TestApplet
+
+
