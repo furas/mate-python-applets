@@ -1,5 +1,12 @@
+I wanted to create applet for MATE.  
+I started digging and checking tutorials, forums, source codes on github.  
+Finally I decided to write it to remeber it.  
+
+
+---
 
 https://wiki.mate-desktop.org/docs:devel:mate-panel
+
 
 Required files:
 
