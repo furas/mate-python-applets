@@ -1,0 +1,14 @@
+[Applet Factory]
+Id=JezAppletFactory
+InProcess=false
+Location=/home/furas/projekty/python/__MATE__/jez-applet/applet.py
+Name=Jez Applet Factory
+Description=A MATE Python Applet example factory
+ 
+[JezApplet]
+Name=Jez
+Description=A MATE Python Applet example
+Icon=mate
+MateComponentId=OAFIID:MATE_JezApplet;
+
+

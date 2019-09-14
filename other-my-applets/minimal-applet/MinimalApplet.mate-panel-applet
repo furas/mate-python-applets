@@ -1,0 +1,14 @@
+[Applet Factory]
+Id=MinimalAppletFactory
+InProcess=false
+Location=/home/furas/projekty/python/__MATE__/minimal-applet/applet.py
+Name=Minimal Applet Factory
+Description=A MATE Python Applet example factory
+ 
+[MinimalApplet]
+Name=Minimal
+Description=A MATE Python Applet example
+Icon=mate
+MateComponentId=OAFIID:MATE_MinimalApplet;
+
+

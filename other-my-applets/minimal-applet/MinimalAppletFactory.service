@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.MinimalAppletFactory
+Exec=/home/furas/projekty/python/__MATE__/minimal-applet/applet.py
+
+

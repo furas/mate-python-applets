@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.TestAppletFactory
+Exec=/home/user/applet/testapplet.py
+
+

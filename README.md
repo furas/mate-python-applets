@@ -43,10 +43,27 @@ I don't know how to start it with parameter `--iid` to run
 To see any debug messages you can use module `logging` and save messages in file to see them after stoping applet.
 I took this part from [mate-i3-applet](https://github.com/city41/mate-i3-applet/blob/master/matei3applet.py)
 
+--- 
+
+## Refresh text on label
+
+It needs 
+
+    GLib.timeout_add(1000, update_label)
+     
+instead of 
+
+    Gtk.timeout_add(1000, update_label)
+    
+--- 
+
+## Class Applet
+
+https://saravananthirumuruganathan.wordpress.com/2010/01/15/creating-gnome-panel-applets-in-python/
 
 --- 
 
-### some applets which I previewed to learn it
+### Some applets which I previewed to learn it
 
 https://github.com/search?l=Python&q=mate+applet&type=Repositories
 
@@ -64,7 +81,7 @@ https://github.com/projecthamster/hamster/blob/gnome_2x/src/hamster-applet
 
 ---
 
-### example how to extends right menu with ActionGroup
+### Examples how to extends right menu with ActionGroup
 
 https://github.com/mate-desktop/mate-applets/blob/master/mateweather/mateweather-applet.c
 
@@ -72,7 +89,7 @@ https://github.com/mate-desktop/mate-applets
 
 --- 
 
-### other links
+### Other links
 
 https://stackoverflow.com/questions/49498316/auto-refreshing-mate-panel-applet?rq=1
 
@@ -82,7 +99,7 @@ https://askubuntu.com/questions/751608/how-can-i-write-a-dynamically-updated-pan
 
 --- 
 
-### all started all with this
+### All started with this
 
 https://wiki.mate-desktop.org/docs:devel:mate-panel
 
@@ -92,9 +109,13 @@ https://askubuntu.com/questions/750815/fuzzy-clock-for-ubuntu/752675#752675
 
 --- 
 
-### tool(s) to run applet without installing it manually (again and again)
+### Tool(s) to run applet without installing it manually (again and again)
 
 https://askubuntu.com/questions/229511/how-can-i-add-an-applet-to-mate-from-the-terminal
 
     /usr/lib/gnome-panel/mate-panel-add --applet=OAFIID:MATE_DockBarXApplet --panel=top_panel_screen0 --position=500
     mateconftool-2 --all-dirs /apps/panel/toplevels
+    
+https://saravananthirumuruganathan.wordpress.com/2010/01/15/creating-gnome-panel-applets-in-python/
+
+
